@@ -1,4 +1,6 @@
 import { settlementRouter } from "~/server/api/routers/settlement";
+import { worldRouter } from "~/server/api/routers/world";
+
 import { createTRPCRouter } from "~/server/api/trpc";
 
 /**
@@ -8,6 +10,7 @@ import { createTRPCRouter } from "~/server/api/trpc";
  */
 export const appRouter = createTRPCRouter({
   settlement: settlementRouter,
+  world: worldRouter,
 });
 
 // export type definition of API

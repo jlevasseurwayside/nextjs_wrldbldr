@@ -44,7 +44,17 @@ model Settlement {
     name      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
-    mapData   String   @default("{}")
+    seed      String   @default("1")
+
+    @@index([name])
+}
+
+model World {
+    id        Int      @id @default(autoincrement())
+    name      String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    seed      String   @default("1")
 
     @@index([name])
 }

@@ -8,6 +8,11 @@ export default {
       fontFamily: {
         sans: [...fontFamily.sans],
       },
+      colors: {
+        "brand-earthy": "#A67440",
+        "brand-blue": "#75D1F2",
+        "brand-map": "#BFA36F",
+      },
     },
   },
   plugins: [],
